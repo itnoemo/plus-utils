@@ -41,7 +41,8 @@ function getMountPropsElement(elementData: DomDataItem) {
 * dom.renderHTML(body, [{tag: 'p', text: 'hello', props: {id: 'test'}, children: []}]);
 * // => body下插入一个文本为hello, 属性id为test的p标签
 */
-export default function (domCtn: any = null, data: Array<DomDataItem> = []) {
+export default function (domCtn: any, data: Array<DomDataItem> = []) {
+	console.log('domCtn', domCtn);
 	// dom节点是否有效
 	if (!domCtn) {
 		console.error('renderHTML params domCtn is required');
@@ -63,7 +64,7 @@ export default function (domCtn: any = null, data: Array<DomDataItem> = []) {
 	}
 
 	// deep循环
-	const deepDomData = (dDom: any = null, dData: DomDataItem = {
+	const deepDomData = (dDom: any, dData: DomDataItem = {
         tag: '',
         text: '',
         props: {}
@@ -73,16 +74,16 @@ export default function (domCtn: any = null, data: Array<DomDataItem> = []) {
 			children = [],
 			text = ''
 		} = dData;
-		// 是否元素类型
-		const isElementType = tag === '';
-		// 是否文本类型
-		const isTextType = text === '';
-		// 非节点 && 非文本
-		if (!isElementType && !isTextType) {
+		// 元素是否为null
+		const isNullElement = tag === '';
+		// 文本是否为空
+		const isEmptyText = text === '';
+		// 空节点 && 孔文本
+		if (isNullElement && isEmptyText) {
 			return;
 		}
 		// 节点类型
-		if (!isTextType) {
+		if (!isEmptyText) {
 			// 若文本中有标签时需要转化
 			const textNode = document.createTextNode(text);
 			dDom.appendChild(textNode);

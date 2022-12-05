@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     testRegex: "(/test/__tests__/.*|(\\.|/)(test|spec))\\.js?$",
     moduleFileExtensions: ['js', 'ts', 'tsx'],
     testPathIgnorePatterns: ['/node_modules/'],
