@@ -2,7 +2,7 @@
   "name": "plus-utils",
   "version": "1.0.1",
   "description": "utils",
-  "main": "lib/index.cjs.js",
+  "main": "lib/index.umd.js",
   "directories": {
     "test": "test"
   },
@@ -24,6 +24,7 @@
     "type": "git",
     "url": "git@github.com:weixiaodece/plus-utils.git"
   },
+  "type": "module",
   "author": "yincece",
   "license": "ISC",
   "devDependencies": {
