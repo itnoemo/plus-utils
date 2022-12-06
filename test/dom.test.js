@@ -1,12 +1,6 @@
-import {dom}  from '../src/index';
+import { math }  from '../src/index';
 import './common/jsdom.js';
 
-test("成功渲染元素", () => {
-    dom.renderHTML(document.body, [{
-        tag: 'h1',
-        props: {
-            id: 'test1'
-        }
-    }]);
-    expect(document.getElementById('test1')).not.toBe(null);
+test("16开平方根等于4", () => {
+    expect(math.sqrt(16)).toBe(4);
 });

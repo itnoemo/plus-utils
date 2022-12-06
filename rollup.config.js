@@ -1,6 +1,8 @@
 import typescript from 'rollup-plugin-typescript';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 export default {
     input: "src/index.ts",
     output: [
@@ -16,12 +18,18 @@ export default {
       }
     ],
     plugins: [
+      commonjs({
+        include: "node_modules/**"
+      }),
       babel({
         exclude: "node_modules/**"
       }),
       typescript({
         exclude: "node_modules/**"
       }),
-      terser()
-    ]
+      terser(),
+      
+      resolve()
+    ],
+    // external:['lodash']
 };
