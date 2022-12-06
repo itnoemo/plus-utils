@@ -42,7 +42,7 @@ function getMountPropsElement(elementData: DomDataItem) {
 * // => body下插入一个文本为hello, 属性id为test的p标签
 */
 export default function (domCtn: any, data: Array<DomDataItem> = []) {
-	console.log('domCtn', domCtn);
+	console.log('123');
 	// dom节点是否有效
 	if (!domCtn) {
 		console.error('renderHTML params domCtn is required');

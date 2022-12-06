@@ -1,4 +1,4 @@
-import { dom }  from '../src/index';
+import {dom}  from '../src/index';
 import './common/jsdom.js';
 
 test("成功渲染元素", () => {
