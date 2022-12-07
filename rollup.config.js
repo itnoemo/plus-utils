@@ -12,7 +12,7 @@ export default {
         name: "plusUtils"
       },
       {
-        file: "lib/index.iife.js",
+        file: "docs/index.iife.js",
         format: "iife",
         name: "plusUtils"
       }
