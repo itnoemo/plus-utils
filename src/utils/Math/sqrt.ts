@@ -1,9 +1,12 @@
 /**
- * Calculates the square root of a number.
- *
- * @param x the number to calculate the root of.
- * @returns the square root if `x` is non-negative or `NaN` if `x` is negative.
- */
+* 计算一个数的开平方根
+* @param x 目标值
+* @returns 返回该目标值的开平方根的值
+* @example
+* ```ts
+*   math.sqrt(16) => 4
+* ```
+*/
 export default function(x: number): number {
     return Math.sqrt(x);
 }

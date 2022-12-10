@@ -16,7 +16,8 @@
     "build": "yarn doc && yarn changelog && mv CHANGELOG.md docs",
     "test": "jest --no-cache",
     "postinstall": "husky install",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "eslint": "eslint --ext .ts,.jsx src/"
   },
   "homepage": "http://utils.itnoemo.com",
   "keywords": [
@@ -28,7 +29,7 @@
     "url": "git@github.com:weixiaodece/plus-utils.git"
   },
   "lint-staged": {
-    "**/*.{jsx,ts,tsx}": "yarn test && eslint"
+    "**/*.{jsx,ts,tsx}": "yarn eslint"
   },
   "author": "yincece",
   "license": "ISC",
@@ -42,11 +43,13 @@
     "@rollup/plugin-commonjs": "^23.0.3",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@types/jest": "^29.2.3",
+    "eslint": "^8.29.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
     "babel-jest": "^29.3.1",
     "commitlint": "^17.3.0",
     "conventional-changelog": "^3.1.25",
     "conventional-changelog-cli": "^2.2.2",
-    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.2",
     "jest": "^29.3.1",
     "jsdom": "^20.0.3",
