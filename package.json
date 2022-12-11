@@ -17,7 +17,7 @@
     "test": "jest --no-cache",
     "postinstall": "husky install",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog.config.cjs",
-    "version": "yarn version && yarn changelog && git add CHANGELOG.md && git commit -m 'docs: changelog' && git push",
+    "version": "yarn changelog && git add CHANGELOG.md && git commit -m 'docs: changelog' && git push",
     "eslint": "eslint --ext .ts,.jsx src/",
     "mdToHtml": "i5ting_toc -f CHANGELOG.md && mv preview docs"
   },
