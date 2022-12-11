@@ -1,7 +1,7 @@
 /node_modules/
 /*.js
-/public
-dist/
-zip/
-/*.htm
+/*.cjs
+/*.json
+lib/
+/*.html
 
