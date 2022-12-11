@@ -1,0 +1,17 @@
+{
+    "entryPoints": ["src/index.ts"],
+    "out": "docs",
+    "includeVersion": true,
+    "disableSources": true,
+    "navigationLinks": {
+      "Docs": "https://typedoc.org/guides/overview",
+      "GitHub": "https://github.com/TypeStrong/typedoc"
+    },
+    "externalSymbolLinkMappings": {
+      // {@link typescript!Partial} will use this link as well as
+      // type Foo = Partial<Bar>
+      "typescript": {
+          "Partial": "https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype"
+      }
+    }
+  }
