@@ -1,6 +1,6 @@
 {
     "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "es", "lib", "dist", "docs", "iife"],
+    "exclude": ["node_modules", "lib", "docs", "test"],
     "compilerOptions": {
       /* Visit https://aka.ms/tsconfig.json to read more about this file */
   

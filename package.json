@@ -1,19 +1,24 @@
 {
   "name": "plus-utils",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "utils",
-  "main": "lib/index.cjs.js",
+  "main": "lib/index.umd.js",
   "directories": {
     "test": "test"
   },
   "files": [
     "lib"
   ],
+  "type": "module",
   "scripts": {
     "dev": "yarn doc && cd ./docs && npx http-server",
-    "doc": "yarn test && typedoc --options ./typedoc.json",
-    "build": "rollup --config",
-    "test": "jest --no-cache"
+    "doc": "yarn test && typedoc --options ./typedoc.json && rollup --config",
+    "build": "yarn doc && yarn changelog && mv CHANGELOG.md docs",
+    "test": "jest --no-cache",
+    "postinstall": "husky install",
+    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog.config.cjs",
+    "version": "yarn changelog && git add CHANGELOG.md",
+    "eslint": "eslint --ext .ts,.jsx src/"
   },
   "homepage": "http://utils.itnoemo.com",
   "keywords": [
@@ -24,6 +29,9 @@
     "type": "git",
     "url": "git@github.com:weixiaodece/plus-utils.git"
   },
+  "lint-staged": {
+    "**/*.{jsx,ts,tsx}": "yarn eslint"
+  },
   "author": "yincece",
   "license": "ISC",
   "devDependencies": {
@@ -31,11 +39,25 @@
     "@babel/plugin-transform-runtime": "^7.19.6",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.18.6",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@types/jest": "^29.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
     "babel-jest": "^29.3.1",
+    "commitlint": "^17.3.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "^8.29.0",
+    "husky": "^8.0.2",
     "jest": "^29.3.1",
     "jsdom": "^20.0.3",
+    "lint-staged": "^13.1.0",
     "rollup": "^3.5.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript": "^1.0.1",
     "ts-jest": "^29.0.3",
     "ts-loader": "^8.2.0",
