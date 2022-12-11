@@ -1,3 +1,9 @@
+## <small>1.1.2 (2022-12-11)</small>
+
+* fix: gitignore文件调整 ([e2a6438](https://github.com/weixiaodece/plus-utils/commit/e2a6438))
+
+
+
 ## <small>1.1.1 (2022-12-11)</small>
 
 
