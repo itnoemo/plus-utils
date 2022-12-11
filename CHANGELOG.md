@@ -1,3 +1,9 @@
+## <small>1.0.8 (2022-12-11)</small>
+
+* feat: 4 ([1d698b3](https://github.com/weixiaodece/plus-utils/commit/1d698b3))
+
+
+
 ## <small>1.0.7 (2022-12-11)</small>
 
 * feat: 3 ([d46fec7](https://github.com/weixiaodece/plus-utils/commit/d46fec7))
