@@ -1,5 +1,6 @@
-## <small>1.0.2 (2022-12-11)</small>
+## <small>1.0.7 (2022-12-11)</small>
 
+* feat: 3 ([d46fec7](https://github.com/weixiaodece/plus-utils/commit/d46fec7))
 * feat: 修改md文件 ([50f2c64](https://github.com/weixiaodece/plus-utils/commit/50f2c64))
 
 

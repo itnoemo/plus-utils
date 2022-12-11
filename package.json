@@ -1,6 +1,6 @@
 {
   "name": "plus-utils",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "utils",
   "main": "lib/index.umd.js",
   "directories": {
