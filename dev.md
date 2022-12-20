@@ -10,17 +10,17 @@
 > * conventional-changelog: 通过提交记录自动生成更新日志,[GitHub](https://github.com/conventional-changelog/conventional-changelog)
 
 ## 项目运行
-> * yarn: 依赖包管理工具
-> * node: v16.16.0(和编译部署时所用的node环境保持一直)
-> * package.json中scripts命令介绍
-  -- dev: 生成文档并通过http-server启用本地服务
-  -- doc: ci(持续集成)时运行的命令
-  -- build: npm和cdn文件生成
-  -- test: 运行测试用例
-  -- changelog: 通过提交记录生成更新日志
-  -- version: 自动修改版本号并提交文档记录
-  -- eslint: 检查文件代码规范
-  -- mdToHtml: 提交记录转html格式
+- yarn: 依赖包管理工具
+- node: v16.16.0(和编译部署时所用的node环境保持一直)
+- package.json中scripts命令介绍
+  - dev: 生成文档并通过http-server启用本地服务
+  - doc: ci(持续集成)时运行的命令
+  - build: npm和cdn文件生成
+  - test: 运行测试用例
+  - changelog: 通过提交记录生成更新日志
+  - version: 自动修改版本号并提交文档记录
+  - eslint: 检查文件代码规范
+  - mdToHtml: 提交记录转html格式
 
 ## 概念解释
 > * 原子: 单一事件，需要放在src->tools下，不对外暴露
