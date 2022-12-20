@@ -15,7 +15,6 @@ In Node.js:
 // Load the full build.
 var plusUtils = require('plus-utils');
 ```
-
 See the [package source](https://github.com/weixiaodece/plus-utils) for more details.s
 
 ## Support
