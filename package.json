@@ -15,8 +15,8 @@
     "doc": "yarn test && typedoc --options ./typedoc.json && rollup --config",
     "build": "yarn doc && yarn changelog && yarn mdToHtml",
     "test": "jest --no-cache",
-    "postinstall": "husky install",
-    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog.config.cjs",
+    "prepare": "husky install",
+    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 1",
     "version": "yarn changelog && git add CHANGELOG.md && git commit -m 'docs: changelog' && git push",
     "eslint": "eslint --ext .ts,.jsx src/",
     "mdToHtml": "i5ting_toc -f CHANGELOG.md && mv preview docs"
