@@ -1,3 +1,11 @@
+## <small>1.0.13 (2023-01-04)</small>
+
+* fix: 功能调整 ([a16927c](https://github.com/weixiaodece/plus-utils/commit/a16927c))
+* chore: 代码提交功能校验规则 ([369af2c](https://github.com/weixiaodece/plus-utils/commit/369af2c))
+* build: 修改构建命令 ([5dcb059](https://github.com/weixiaodece/plus-utils/commit/5dcb059))
+
+
+
 ## <small>1.0.12 (2022-12-20)</small>
 
 * v1.0.12 ([61bc08a](https://github.com/weixiaodece/plus-utils/commit/61bc08a))
