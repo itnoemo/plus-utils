@@ -1,5 +1,7 @@
 ## <small>1.0.14 (2023-01-04)</small>
 
+* v1.0.14 ([929ec00](https://github.com/weixiaodece/plus-utils/commit/929ec00))
+* docs: changelog ([e3adbb6](https://github.com/weixiaodece/plus-utils/commit/e3adbb6))
 * fix: 测试 ([5e28e4b](https://github.com/weixiaodece/plus-utils/commit/5e28e4b))
 
 
